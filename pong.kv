@@ -8,9 +8,11 @@
             size: self.size          
 
 <PongGame>:
+    ball: pong_ball
+    
     canvas:
         Rectangle:
-            pos: self.center_x - 5, 100
+            pos: self.center_x - 5, 0
             size: 10, self.height
     
     Label:
@@ -26,4 +28,6 @@
         text: "0"
     
     PongBall:
+        id: pong_ball
         center: self.parent.center
+        
